@@ -118,7 +118,7 @@ class AdminLteServiceProvider extends BaseServiceProvider
      */
     private function loadViews()
     {
-        $viewsPath = $this->packagePath('resources/views');
+        $viewsPath = base_path('Themes/admin/views/vendor/adminlte');//$this->packagePath('resources/views');
         $this->loadViewsFrom($viewsPath, 'adminlte');
     }
 
